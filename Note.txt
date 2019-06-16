@@ -1,0 +1,34 @@
+﻿==== ĐÃ CUSTOM =====
+20/5 - viet hoa file viResource.nopres.xml từ dưới lên đến 17701
+20/5- tren xuong 1000
+Xóa file dataSetting in App_Data để tạo data mới.
+
+=== Nop.Data ===
+	NopObjectContext/OnModelCreating
+	 modelBuilder.HasDefaultSchema("dbo");
+	 
+	 // === api ===
+	modelBuilder.HasDefaultSchema("dbo");
+
+	 Config email:
+	<!-- DOMAIN EMAIL -->
+	<add key="SMTP_FROM" value="muabantotvip@gmail.com" />
+    <add key="SMTP_USERNAME" value="muabantotvip@gmail.com" />
+    <add key="SMTP_PASSWORD" value="S@iGon2018" />
+    <add key="SMTP_HOST" value="smtp.gmail.com" />
+    <add key="SMTP_PORT" value="587" />
+    <add key="SMTP_ENABLE_SSL" value="true" />
+
+	 <!-- DOMAIN EMAIL -->
+    <add key="SMTP_FROM" value="no-reply@muabantot.vip" />
+    <add key="SMTP_USERNAME" value="no-reply@muabantot.vip" />
+    <add key="SMTP_PASSWORD" value="saigon2018" />
+    <add key="SMTP_HOST" value="mail.muabantot.vip" />
+    <add key="SMTP_PORT" value="587" />
+    <add key="SMTP_ENABLE_SSL" value="true" />
+
+	//=== Disable RSS ===//
+	add line 189 content/css/styles.css !important;
+
+	//=== Edit menu === //
+	Presentation\Nop.Web\Views\Shared\Components\TopMenu\Default.cshtml
