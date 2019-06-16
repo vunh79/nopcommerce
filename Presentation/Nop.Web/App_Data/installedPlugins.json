@@ -3,6 +3,7 @@
   "DiscountRequirement.MustBeAssignedToCustomerRole",
   "CurrencyExchange.ECB",
   "ExternalAuth.Facebook",
+  "Misc.SendinBlue",
   "Payments.CheckMoneyOrder",
   "Payments.Manual",
   "Payments.Square",

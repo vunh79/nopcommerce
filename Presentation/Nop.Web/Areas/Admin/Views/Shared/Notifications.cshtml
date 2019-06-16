@@ -24,15 +24,15 @@
 
 
     //warning messages
-    var warningMessages = new List<string>();
-    if (TempData[$"nop.notifications.{NotifyType.Warning}"] != null)
-    {
-        warningMessages.AddRange(TempData[$"nop.notifications.{NotifyType.Warning}"] as IList<string>);
-    }
-    if (ViewData[$"nop.notifications.{NotifyType.Warning}"] != null)
-    {
-        warningMessages.AddRange(ViewData[$"nop.notifications.{NotifyType.Warning}"] as IList<string>);
-    }
+    //var warningMessages = new List<string>();
+    //if (TempData[$"nop.notifications.{NotifyType.Warning}"] != null)
+    //{
+    //    warningMessages.AddRange(TempData[$"nop.notifications.{NotifyType.Warning}"] as IList<string>);
+    //}
+    //if (ViewData[$"nop.notifications.{NotifyType.Warning}"] != null)
+    //{
+    //    warningMessages.AddRange(ViewData[$"nop.notifications.{NotifyType.Warning}"] as IList<string>);
+    //}
 }
 
 @foreach (var message in successMessages)
@@ -54,7 +54,7 @@
     }
 }
 
-@if (warningMessages.Count() > 0)
+@*@if (warningMessages.Count() > 0)
 {
 
     @foreach (var message in warningMessages)
@@ -64,4 +64,4 @@
            @message 
         </div>
     }
-}
+}*@

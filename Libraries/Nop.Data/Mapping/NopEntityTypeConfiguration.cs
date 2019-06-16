@@ -18,6 +18,7 @@ namespace Nop.Data.Mapping
         /// <param name="builder">The builder to be used to configure the entity</param>
         protected virtual void PostConfigure(EntityTypeBuilder<TEntity> builder)
         {
+            
         }
 
         #endregion
@@ -40,6 +41,7 @@ namespace Nop.Data.Mapping
         /// <param name="modelBuilder">The builder being used to construct the model for the database context</param>
         public virtual void ApplyConfiguration(ModelBuilder modelBuilder)
         {
+            modelBuilder.HasDefaultSchema("dbo");
             modelBuilder.ApplyConfiguration(this);
         }
 

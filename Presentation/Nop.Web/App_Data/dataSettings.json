@@ -1,0 +1,5 @@
+﻿{
+  "DataProvider": "sqlserver",
+  "DataConnectionString": "Data Source=112.78.2.210,1433;Initial Catalog=mua12198_ecom2;Integrated Security=False;Persist Security Info=False;User ID=mua12198_admin;Password=S@iGon2018",
+  "RawDataSettings": {}
+}

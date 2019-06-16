@@ -39,6 +39,8 @@ namespace Nop.Data.Mapping
         /// <param name="modelBuilder">The builder being used to construct the model for the database context</param>
         public virtual void ApplyConfiguration(ModelBuilder modelBuilder)
         {
+            modelBuilder.HasDefaultSchema("dbo");
+
             modelBuilder.ApplyConfiguration(this);
         }
 

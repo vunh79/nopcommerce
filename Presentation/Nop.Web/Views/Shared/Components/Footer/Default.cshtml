@@ -124,11 +124,13 @@
         </div>
         @if (!Model.HidePoweredByNopCommerce)
         {
-            <div class="footer-powered-by">
-                @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
-                    Please find more info at https://www.nopcommerce.com/copyrightremoval.aspx*@
-                Powered by <a href="https://www.duynamtin.com/">Hoang Vu Nguyen</a>
-            </div>
+        <div class="footer-powered-by">
+            @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
+        Please find more info at https://www.nopcommerce.com/copyrightremoval.aspx
+            Powered by <a href="https://www.nopcommerce.com/">nopCommerce</a>
+            *@
+            Powered by <a href="https://www.duynamtin.com/">Hoang Vu Nguyen</a>
+        </div>
         }
         @await Component.InvokeAsync("StoreThemeSelector")
     </div>

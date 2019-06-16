@@ -36,7 +36,7 @@ namespace Nop.Data
                     && (type.BaseType.GetGenericTypeDefinition() == typeof(NopEntityTypeConfiguration<>) 
                         || type.BaseType.GetGenericTypeDefinition() == typeof(NopQueryTypeConfiguration<>)));
 
-            modelBuilder.HasDefaultSchema("dbo");
+           
 
             foreach (var typeConfiguration in typeConfigurations)
             {

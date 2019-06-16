@@ -19,13 +19,13 @@ namespace Nop.Plugin.Api.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Set Schema
-           
+          //  modelBuilder.HasDefaultSchema("hoangvu");
             modelBuilder.ApplyConfiguration(new WebHooksMap());
 
             //disable EdmMetadata generation
             //modelBuilder.Conventions.Remove<IncludeMetadataConvention>();
 
-            modelBuilder.HasDefaultSchema("dbo");
+          //  modelBuilder.HasDefaultSchema("hoangvu");
             base.OnModelCreating(modelBuilder);
         }
         

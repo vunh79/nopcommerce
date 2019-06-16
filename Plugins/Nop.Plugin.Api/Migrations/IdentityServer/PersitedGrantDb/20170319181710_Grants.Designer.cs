@@ -14,7 +14,6 @@
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasDefaultSchema("dbo")
                 .HasAnnotation("ProductVersion", "1.1.1")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -46,7 +45,7 @@
 
                     b.HasIndex("SubjectId", "ClientId", "Type");
 
-                    b.ToTable("PersistedGrants");
+                    b.ToTable("PersistedGrants", "dbo");
                 });
         }
     }
